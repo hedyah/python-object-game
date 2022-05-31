@@ -12,8 +12,6 @@ board = [
 
 printBoard = gameboard.GameBoard.printBoard
 checkWin = gameboard.GameBoard.checkWin
-rowPosition = player.Player.moveLeft
-columnPosition = player.Player.moveUp
 
 
 print("Welcome to the game!")
@@ -31,7 +29,7 @@ print("-----------------------------")
 # Create a new Player called played starting at position 3,2
 
 while True:
-    board(printBoard(player.rowPosition, player.columnPosition))
+    board.printBoard(player.rowPosition, player.columnPosition)
     selection = input("Make a move: ")
     # TODO
     # Move the player through the board
